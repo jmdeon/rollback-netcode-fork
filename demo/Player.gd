@@ -9,10 +9,12 @@ enum PlayerInputKey {
 func _save_state() -> Dictionary:
 	return {
 		position = position,
+		velocity = velocity
 	}
 
 func _load_state(state: Dictionary) -> void:
 	position = state['position']
+	velocity = state['velocity']
 
 func _interpolate_state(old_state: Dictionary, new_state: Dictionary, weight: float) -> void:
 	position = lerp(old_state['position'], new_state['position'], weight)
