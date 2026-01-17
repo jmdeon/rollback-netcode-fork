@@ -166,4 +166,3 @@ func setup_match_for_replay(my_peer_id: int, peer_ids: Array, _match_info: Dicti
 	else:
 		client_peer_id = my_peer_id
 	$ClientPlayer.set_multiplayer_authority(client_peer_id)
-

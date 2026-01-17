@@ -1,8 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://ljnpif651dk8"]
 
-[ext_resource path="res://demo/Player.gd" type="Script" id=1]
-[ext_resource path="res://assets/godot.png" type="Texture2D" id=2]
+[ext_resource type="Script" uid="uid://pgoohco6s8ky" path="res://demo/Player.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://y2qiqet2veue" path="res://assets/godot.png" id="2"]
 
 [node name="Player" type="Sprite2D" groups=["network_sync"]]
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
+texture = ExtResource("2")
+script = ExtResource("1")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cc84515akbcye"]
 
-[ext_resource type="Script" path="res://demo/Main.gd" id="1"]
-[ext_resource type="PackedScene" path="res://demo/Player.tscn" id="2"]
+[ext_resource type="Script" uid="uid://dyxrhkj0br6d5" path="res://demo/Main.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://ljnpif651dk8" path="res://demo/Player.tscn" id="2"]
 [ext_resource type="FontFile" uid="uid://va7ac8iahrws" path="res://assets/monogram_extended.ttf" id="3"]
 
 [sub_resource type="FontFile" id="1"]
@@ -86,7 +86,7 @@ text = "Host"
 [node name="HostField" type="LineEdit" parent="CanvasLayer/ConnectionPanel/VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "127.0.0.1"
+text = "192.168.1.7"
 
 [node name="PortLabel" type="Label" parent="CanvasLayer/ConnectionPanel/VBoxContainer/GridContainer"]
 layout_mode = 2
@@ -96,7 +96,7 @@ text = "Port"
 [node name="PortField" type="LineEdit" parent="CanvasLayer/ConnectionPanel/VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "9999"
+text = "36666"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/ConnectionPanel/VBoxContainer"]
 layout_mode = 2
