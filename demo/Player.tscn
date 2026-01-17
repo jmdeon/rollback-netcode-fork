@@ -1,8 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://ljnpif651dk8"]
+[gd_scene load_steps=4 format=3 uid="uid://ljnpif651dk8"]
 
-[ext_resource type="Script" uid="uid://pgoohco6s8ky" path="res://demo/Player.gd" id="1"]
+[ext_resource type="Script" uid="uid://b0m3ev3kb5nqk" path="res://demo/player.gd" id="1_0eyh0"]
 [ext_resource type="Texture2D" uid="uid://y2qiqet2veue" path="res://assets/godot.png" id="2"]
 
-[node name="Player" type="Sprite2D" groups=["network_sync"]]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_45mcp"]
+size = Vector2(60, 59)
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["network_sync"]]
+script = ExtResource("1_0eyh0")
+
+[node name="Player" type="Sprite2D" parent="."]
 texture = ExtResource("2")
-script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_45mcp")

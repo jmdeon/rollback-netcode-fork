@@ -1,4 +1,4 @@
-extends Sprite2D
+extends CharacterBody2D
 
 @export var input_prefix := "player1_"
 
@@ -35,4 +35,6 @@ func _predict_remote_input(previous_input: Dictionary, ticks_since_real_input: i
 	return input
 
 func _network_process(input: Dictionary) -> void:
-	position += input.get(PlayerInputKey.INPUT_VECTOR, Vector2.ZERO) * 8
+	#position += input.get(PlayerInputKey.INPUT_VECTOR, Vector2.ZERO) * 8
+	velocity  += input.get(PlayerInputKey.INPUT_VECTOR, Vector2.ZERO) * 32
+	move_and_slide()
